@@ -2,4 +2,4 @@
 exportPattern("^[^\\.]")
 import(dplyr)
 import(sf)
-inport(sp)
+import(sp)
