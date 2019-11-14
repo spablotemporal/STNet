@@ -11,4 +11,4 @@ Description: Tools for Spatio Temporal Network Analysis
 License: What license it uses
 Encoding: UTF-8
 LazyData: true
-Imports: sf, dplyr, sp
+# Imports: sf, dplyr, sp
