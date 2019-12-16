@@ -33,5 +33,9 @@ CreateNetwork <- function(DF, DTh, coords = c("X", "Y"), DateTime = "DateTime", 
     
     D_DF <- rbind(D_DF, D_DF_i)
   }
-  return(D_DF[-1,])
+  D_DF <- D_DF[-1,] %>%
+    group_by(Distance, DateTime) %>%
+    summarise_all(.funs = first)
+  
+  return(D_DF)
 }
