@@ -1,4 +1,11 @@
-# FUnction to get the contacts
+#' Function to get the contacts
+#' 
+#' @param DF A data.frame object with the information of the GPS Locations.
+#' @param DTh The distance treshold in meters.
+#' @param coords the names of the columns with the coordinates in the data.frame object.
+#' @param DateTime The name of the column with the temporal information o fhte GPS record.
+#' @param ID The name of the column with the unique Identifier for the subjects.
+
 CreateNetwork <- function(DF, DTh, coords = c("X", "Y"), DateTime = "DateTime", ID = "ID"){
   ### Test data
   # DF <- data.frame(GPSc); ID <- "CollarID"; DateTime <- "DateTime"; coords <- c("X", "Y"); DTh = 1
