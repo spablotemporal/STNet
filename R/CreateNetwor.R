@@ -5,6 +5,7 @@
 #' @param coords the names of the columns with the coordinates in the data.frame object.
 #' @param DateTime The name of the column with the temporal information o fhte GPS record.
 #' @param ID The name of the column with the unique Identifier for the subjects.
+#' @export
 
 CreateNetwork <- function(DF, DTh, coords = c("X", "Y"), DateTime = "DateTime", ID = "ID"){
   ### Test data
