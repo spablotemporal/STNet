@@ -1,4 +1,7 @@
-## Function to shift the coordinates, (data frame of x and Y needed)
+#' Function to Shift a set of coordinates, used to de-identify data
+#' 
+#' @param x The set of coordinates to be used, must be in a data.frame format
+#' 
 ShiftCoords <- function(x){
   e1 <- rnorm(1, 5)
   e2 <- rnorm(1, 4)

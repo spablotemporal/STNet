@@ -1,4 +1,7 @@
-# HexMap
+#' Function to Plot a Hexagonal grid map of counts
+#' 
+#' @param Hex A hexagon grid, see HexGrid function on how to create it
+#' @param Points A set of points that will be counted by cell
 
 HexMap <- function(Hex, Points){
   Hex %>%

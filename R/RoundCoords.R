@@ -1,4 +1,8 @@
-# Round Coordinates (Has to be UTM)
+#' Function to round teh coordinates, used to de-identify data. Coordinates must be in UTM
+#' 
+#' @param Coords The coordinates that want to round.
+#' @param fct A factor at which the coordinates will be rounded
+
 
 RoundCoords <- function(Coords, fct){
   Crds <- floor(st_coordinates(Coords)/fct)

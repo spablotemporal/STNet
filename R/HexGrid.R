@@ -1,4 +1,8 @@
-# Function to get the grids:
+#' Function to Create a Hexagonal grid in a spatial field
+#' 
+#' @param mycellsize The size of each cell of the grid.
+#' @param Shp A shapefile which will be used as the area for the grids, must be in UTM
+
 HexGrid <- function(mycellsize, Shp) {
   DFsp <- Shp %>%
     as("Spatial")
