@@ -2,6 +2,7 @@
 #' 
 #' @param mycellsize The size of each cell of the grid.
 #' @param Shp A shapefile which will be used as the area for the grids, must be in UTM
+#' @export
 
 HexGrid <- function(mycellsize, Shp) {
   DFsp <- Shp %>%

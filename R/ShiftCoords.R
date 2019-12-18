@@ -1,6 +1,7 @@
 #' Function to Shift a set of coordinates, used to de-identify data
 #' 
 #' @param x The set of coordinates to be used, must be in a data.frame format
+#' @export
 #' 
 ShiftCoords <- function(x){
   e1 <- rnorm(1, 5)

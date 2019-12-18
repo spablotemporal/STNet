@@ -2,6 +2,7 @@
 #' 
 #' @param Coords The coordinates that want to round.
 #' @param fct A factor at which the coordinates will be rounded
+#' @export
 
 
 RoundCoords <- function(Coords, fct){
