@@ -4,15 +4,15 @@
 #' @param Shp A shapefile which will be used as the area for the grids, must be in UTM
 #' @export
 
-HexGrid <- function(mycellsize, Shp) {
-  DFsp <- Shp %>%
-    as("Spatial")
-  HexPts <- sp::spsample(DFsp, type="hexagonal", offset=c(0,0), cellsize=mycellsize)
-  # Create Grid
+HexGrid <- function (cellsize, Shp){
+  cellsize <- 15e3
+  Shp <- Border
+  DFsp <- Shp %>% as("Spatial")
+  HexPts <- sp::spsample(DFsp, type = "hexagonal", offset = c(0,0), cellsize = cellsize)
   HexPols <- sp::HexPoints2SpatialPolygons(HexPts)
-  # Conver to spatialpolygon DF
-  df <- data.frame(idhex = getSpPPolygonsIDSlots(HexPols))
+  df <- data.frame(idhex = gsub("ID", "", getSpPPolygonsIDSlots(HexPols)))
   row.names(df) <- sp::getSpPPolygonsIDSlots(HexPols)
-  hexgrid <- sp::SpatialPolygonsDataFrame(HexPols, data = df) %>% st_as_sf()
+  hexgrid <- sp::SpatialPolygonsDataFrame(HexPols, data = df) %>% 
+    st_as_sf(crs = st_crs(Shp))
   return(hexgrid)
 }
