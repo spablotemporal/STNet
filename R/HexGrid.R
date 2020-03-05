@@ -5,8 +5,6 @@
 #' @export
 
 HexGrid <- function (cellsize, Shp){
-  cellsize <- 15e3
-  Shp <- Border
   DFsp <- Shp %>% as("Spatial")
   HexPts <- sp::spsample(DFsp, type = "hexagonal", offset = c(0,0), cellsize = cellsize)
   HexPols <- sp::HexPoints2SpatialPolygons(HexPts)
