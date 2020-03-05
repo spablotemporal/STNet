@@ -4,12 +4,12 @@
 \alias{HexGrid}
 \title{Function to Create a Hexagonal grid in a spatial field}
 \usage{
-HexGrid(mycellsize, Shp)
+HexGrid(cellsize, Shp)
 }
 \arguments{
-\item{mycellsize}{The size of each cell of the grid.}
-
 \item{Shp}{A shapefile which will be used as the area for the grids, must be in UTM}
+
+\item{mycellsize}{The size of each cell of the grid.}
 }
 \description{
 Function to Create a Hexagonal grid in a spatial field

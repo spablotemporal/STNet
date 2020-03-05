@@ -4,8 +4,7 @@
 \alias{CreateNetwork}
 \title{Function to get the contacts}
 \usage{
-CreateNetwork(DF, DTh, coords = c("X", "Y"), DateTime = "DateTime",
-  ID = "ID")
+CreateNetwork(DF, DTh, coords = c("X", "Y"), DateTime = "DateTime", ID = "ID")
 }
 \arguments{
 \item{DF}{A data.frame object with the information of the GPS Locations.}
