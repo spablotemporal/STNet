@@ -3,6 +3,7 @@
 export(CreateNetwork)
 export(HexGrid)
 export(HexMap)
+export(NetSum)
 export(RoundCoords)
 export(ShiftCoords)
 export(st_overlaps_with_threshold)
