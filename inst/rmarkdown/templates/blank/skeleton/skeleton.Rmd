@@ -1,16 +1,14 @@
 ---
 title: "Title"
-author: "Pablo Gomez"
+author: ""
 date: "`r Sys.Date()`"
-output:
-  html_document:
-    toc: true
-    toc_float: true
-    number_sections: true
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
+# Set the document options for chunks
 knitr::opts_chunk$set(warning = F, message = F)
-library(dplyr); library(ggplot2); library(ggpubr);library(Pabloverse)
+# Load the libraries you will use
+library(dplyr); library(ggplot2); library(ggpubr)
 ```
 

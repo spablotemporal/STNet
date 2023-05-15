@@ -1,4 +1,4 @@
-name: T1
+name: blank
 description: >
-   A description of the template
+   This is a blank template for an Rmd document
 create_dir: FALSE
