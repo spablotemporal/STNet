@@ -7,7 +7,7 @@ NetSum <- function(x){
   x = tidygraph::as_tbl_graph(x)
   data.frame(
     Edges = x %E>% data.frame() %>% nrow(),
-    Nodes = length(x),
+    Nodes = x %N>% data.frame() %>% nrow(),
     Density = igraph::graph.density(x),
     Components = igraph::components(x)$no,
     Diameter = igraph::diameter(x),
