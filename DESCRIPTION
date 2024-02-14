@@ -1,4 +1,4 @@
-Package: STNet
+Package: stnet
 Title: Tools for Spatio Temporal Network Analysis 
 Version: 0.0.0.1
 Authors@R: 
